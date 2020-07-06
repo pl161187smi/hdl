@@ -1,4 +1,3 @@
-
 ad_ip_parameter sys_ps7 CONFIG.PCW_ACT_APU_PERIPHERAL_FREQMHZ {666.666687}
 ad_ip_parameter sys_ps7 CONFIG.PCW_ACT_CAN0_PERIPHERAL_FREQMHZ {23.8095} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_ACT_CAN1_PERIPHERAL_FREQMHZ {23.8095} 
@@ -7,7 +6,7 @@ ad_ip_parameter sys_ps7 CONFIG.PCW_ACT_DCI_PERIPHERAL_FREQMHZ {10.158730}
 ad_ip_parameter sys_ps7 CONFIG.PCW_ACT_ENET0_PERIPHERAL_FREQMHZ {125.000000} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_ACT_ENET1_PERIPHERAL_FREQMHZ {10.000000} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ {100.000000} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ {142.857132} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ {10.000000}
 ad_ip_parameter sys_ps7 CONFIG.PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ {10.000000} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ {10.000000} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_ACT_I2C_PERIPHERAL_FREQMHZ {50} 
@@ -36,7 +35,7 @@ ad_ip_parameter sys_ps7 CONFIG.PCW_CAN0_CAN0_IO {MIO 14 .. 15}
 ad_ip_parameter sys_ps7 CONFIG.PCW_CAN0_GRP_CLK_ENABLE {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_CAN0_HIGHADDR {0xE0008FFF} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_CAN0_PERIPHERAL_CLKSRC {External} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_CAN0_PERIPHERAL_ENABLE {1} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_CAN0_PERIPHERAL_ENABLE {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_CAN0_PERIPHERAL_FREQMHZ {-1} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_CAN1_BASEADDR {0xE0009000} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_CAN1_GRP_CLK_ENABLE {0} 
@@ -110,11 +109,11 @@ ad_ip_parameter sys_ps7 CONFIG.PCW_ENET_RESET_SELECT {Share reset pin}
 
 ad_ip_parameter sys_ps7 CONFIG.PCW_EN_4K_TIMER {0} 
 
-ad_ip_parameter sys_ps7 CONFIG.PCW_EN_CAN0 {1} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_EN_CAN0 {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_EN_CAN1 {0} 
 
-ad_ip_parameter sys_ps7 CONFIG.PCW_EN_CLK0_PORT {1} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_EN_CLK1_PORT {1} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_EN_CLK0_PORT {0} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_EN_CLK1_PORT {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_EN_CLK2_PORT {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_EN_CLK3_PORT {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_EN_CLKTRIG0_PORT {0} 
@@ -196,11 +195,11 @@ ad_ip_parameter sys_ps7 CONFIG.PCW_FCLK_CLK1_BUF {TRUE}
 ad_ip_parameter sys_ps7 CONFIG.PCW_FCLK_CLK2_BUF {FALSE} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_FCLK_CLK3_BUF {FALSE} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {140} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {50} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ {50} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA3_PERIPHERAL_FREQMHZ {50} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA_FCLK0_ENABLE {1} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA_FCLK1_ENABLE {1} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA_FCLK1_ENABLE {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA_FCLK2_ENABLE {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA_FCLK3_ENABLE {0} 
 
@@ -221,257 +220,258 @@ ad_ip_parameter sys_ps7 CONFIG.PCW_GP1_NUM_READ_THREADS {4}
 ad_ip_parameter sys_ps7 CONFIG.PCW_GP1_NUM_WRITE_THREADS {4} 
 
 
-ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_BASEADDR {0xE000A000} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE {1} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_EMIO_GPIO_IO {64} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_EMIO_GPIO_WIDTH {64} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_HIGHADDR {0xE000AFFF} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_MIO_GPIO_ENABLE {1} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_MIO_GPIO_IO {MIO} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_PERIPHERAL_ENABLE {0} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_BASEADDR {0xE0004000} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_GRP_INT_ENABLE {1} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_GRP_INT_IO {EMIO} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_HIGHADDR {0xE0004FFF} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_I2C0_IO {EMIO} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_PERIPHERAL_ENABLE {1} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_RESET_ENABLE {0} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_I2C1_BASEADDR {0xE0005000} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_I2C1_GRP_INT_ENABLE {0} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_I2C1_HIGHADDR {0xE0005FFF} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_I2C1_I2C1_IO {MIO 12 .. 13} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_I2C1_PERIPHERAL_ENABLE {1} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_I2C1_RESET_ENABLE {0} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_I2C_PERIPHERAL_FREQMHZ {111.111115} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_I2C_RESET_ENABLE {1} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_I2C_RESET_POLARITY {Active Low} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_I2C_RESET_SELECT {Share reset pin} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_IMPORT_BOARD_PRESET {None} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_INCLUDE_ACP_TRANS_CHECK {0} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_INCLUDE_TRACE_BUFFER {0} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_IOPLL_CTRL_FBDIV {30} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_IO_IO_PLL_FREQMHZ {1000.000} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_IRQ_F2P_INTR {1} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_IRQ_F2P_MODE {DIRECT} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_0_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_0_IOTYPE {LVCMOS 3.3V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_0_PULLUP {disabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_0_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_10_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_10_IOTYPE {LVCMOS 3.3V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_10_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_10_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_11_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_11_IOTYPE {LVCMOS 3.3V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_11_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_11_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_12_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_12_IOTYPE {LVCMOS 3.3V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_12_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_12_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_13_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_13_IOTYPE {LVCMOS 3.3V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_13_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_13_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_14_DIRECTION {in} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_14_IOTYPE {LVCMOS 3.3V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_14_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_14_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_15_DIRECTION {out} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_15_IOTYPE {LVCMOS 3.3V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_15_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_15_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_16_DIRECTION {out} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_16_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_16_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_16_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_17_DIRECTION {out} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_17_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_17_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_17_SLEW {fast} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_18_DIRECTION {out} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_18_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_18_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_18_SLEW {fast} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_19_DIRECTION {out} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_19_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_19_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_19_SLEW {fast} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_1_DIRECTION {out} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_1_IOTYPE {LVCMOS 3.3V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_1_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_1_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_20_DIRECTION {out} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_20_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_20_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_20_SLEW {fast} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_21_DIRECTION {out} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_21_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_21_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_21_SLEW {fast} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_22_DIRECTION {in} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_22_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_22_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_22_SLEW {fast} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_23_DIRECTION {in} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_23_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_23_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_23_SLEW {fast} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_24_DIRECTION {in} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_24_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_24_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_24_SLEW {fast} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_25_DIRECTION {in} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_25_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_25_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_25_SLEW {fast} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_26_DIRECTION {in} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_26_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_26_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_26_SLEW {fast} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_27_DIRECTION {in} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_27_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_27_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_27_SLEW {fast} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_28_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_28_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_28_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_28_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_29_DIRECTION {in} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_29_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_29_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_29_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_2_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_2_IOTYPE {LVCMOS 3.3V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_2_PULLUP {disabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_2_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_30_DIRECTION {out} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_30_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_30_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_30_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_31_DIRECTION {in} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_31_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_31_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_31_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_32_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_32_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_32_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_32_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_33_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_33_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_33_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_33_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_34_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_34_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_34_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_34_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_35_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_35_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_35_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_35_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_36_DIRECTION {in} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_36_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_36_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_36_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_37_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_37_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_37_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_37_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_38_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_38_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_38_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_38_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_39_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_39_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_39_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_39_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_3_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_3_IOTYPE {LVCMOS 3.3V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_3_PULLUP {disabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_3_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_40_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_40_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_40_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_40_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_41_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_41_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_41_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_41_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_42_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_42_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_42_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_42_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_43_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_43_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_43_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_43_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_44_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_44_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_44_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_44_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_45_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_45_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_45_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_45_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_46_DIRECTION {in} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_46_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_46_PULLUP {disabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_46_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_47_DIRECTION {in} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_47_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_47_PULLUP {disabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_47_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_48_DIRECTION {out} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_48_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_48_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_48_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_49_DIRECTION {in} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_49_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_49_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_49_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_4_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_4_IOTYPE {LVCMOS 3.3V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_4_PULLUP {disabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_4_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_50_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_50_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_50_PULLUP {disabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_50_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_51_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_51_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_51_PULLUP {disabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_51_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_52_DIRECTION {out} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_52_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_52_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_52_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_53_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_53_IOTYPE {LVCMOS 1.8V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_53_PULLUP {enabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_53_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_5_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_5_IOTYPE {LVCMOS 3.3V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_5_PULLUP {disabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_5_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_6_DIRECTION {out} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_6_IOTYPE {LVCMOS 3.3V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_6_PULLUP {disabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_6_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_7_DIRECTION {out} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_7_IOTYPE {LVCMOS 3.3V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_7_PULLUP {disabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_7_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_8_DIRECTION {out} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_8_IOTYPE {LVCMOS 3.3V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_8_PULLUP {disabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_8_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_9_DIRECTION {inout} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_9_IOTYPE {LVCMOS 3.3V} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_9_PULLUP {disabled} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_9_SLEW {slow} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_PRIMITIVE {54} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_TREE_PERIPHERALS {GPIO#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#USB Reset#Quad SPI Flash#GPIO#GPIO#GPIO#I2C 1#I2C 1#CAN 0#CAN 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#UART 1#UART 1#GPIO#GPIO#Enet 0#Enet 0} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_TREE_SIGNALS {gpio[0]#qspi0_ss_b#qspi0_io[0]#qspi0_io[1]#qspi0_io[2]#qspi0_io[3]/HOLD_B#qspi0_sclk#reset#qspi_fbclk#gpio[9]#gpio[10]#gpio[11]#scl#sda#rx#tx#tx_clk#txd[0]#txd[1]#txd[2]#txd[3]#tx_ctl#rx_clk#rxd[0]#rxd[1]#rxd[2]#rxd[3]#rx_ctl#data[4]#dir#stp#nxt#data[0]#data[1]#data[2]#data[3]#clk#data[5]#data[6]#data[7]#clk#cmd#data[0]#data[1]#data[2]#data[3]#cd#wp#tx#rx#gpio[50]#gpio[51]#mdc#mdio} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_BASEADDR {0xE000A000} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE {1} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_EMIO_GPIO_IO {64} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_EMIO_GPIO_WIDTH {64} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_HIGHADDR {0xE000AFFF} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_MIO_GPIO_ENABLE {1} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_MIO_GPIO_IO {MIO} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_PERIPHERAL_ENABLE {0} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_BASEADDR {0xE0004000} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_GRP_INT_ENABLE {1} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_GRP_INT_IO {EMIO} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_HIGHADDR {0xE0004FFF} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_I2C0_IO {EMIO} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_PERIPHERAL_ENABLE {1} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_RESET_ENABLE {0} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_I2C1_BASEADDR {0xE0005000} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_I2C1_GRP_INT_ENABLE {0} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_I2C1_HIGHADDR {0xE0005FFF} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_I2C1_I2C1_IO {MIO 12 .. 13} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_I2C1_PERIPHERAL_ENABLE {1} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_I2C1_RESET_ENABLE {0} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_I2C_PERIPHERAL_FREQMHZ {111.111115} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_I2C_RESET_ENABLE {1} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_I2C_RESET_POLARITY {Active Low} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_I2C_RESET_SELECT {Share reset pin} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_IMPORT_BOARD_PRESET {None} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_INCLUDE_ACP_TRANS_CHECK {0} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_INCLUDE_TRACE_BUFFER {0} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_IOPLL_CTRL_FBDIV {30} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_IO_IO_PLL_FREQMHZ {1000.000} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_IRQ_F2P_INTR {1} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_IRQ_F2P_MODE {DIRECT} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_0_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_0_IOTYPE {LVCMOS 3.3V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_0_PULLUP {disabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_0_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_10_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_10_IOTYPE {LVCMOS 3.3V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_10_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_10_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_11_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_11_IOTYPE {LVCMOS 3.3V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_11_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_11_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_12_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_12_IOTYPE {LVCMOS 3.3V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_12_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_12_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_13_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_13_IOTYPE {LVCMOS 3.3V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_13_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_13_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_14_DIRECTION {in} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_14_IOTYPE {LVCMOS 3.3V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_14_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_14_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_15_DIRECTION {out} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_15_IOTYPE {LVCMOS 3.3V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_15_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_15_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_16_DIRECTION {out} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_16_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_16_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_16_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_17_DIRECTION {out} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_17_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_17_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_17_SLEW {fast} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_18_DIRECTION {out} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_18_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_18_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_18_SLEW {fast} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_19_DIRECTION {out} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_19_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_19_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_19_SLEW {fast} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_1_DIRECTION {out} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_1_IOTYPE {LVCMOS 3.3V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_1_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_1_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_20_DIRECTION {out} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_20_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_20_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_20_SLEW {fast} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_21_DIRECTION {out} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_21_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_21_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_21_SLEW {fast} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_22_DIRECTION {in} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_22_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_22_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_22_SLEW {fast} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_23_DIRECTION {in} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_23_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_23_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_23_SLEW {fast} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_24_DIRECTION {in} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_24_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_24_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_24_SLEW {fast} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_25_DIRECTION {in} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_25_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_25_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_25_SLEW {fast} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_26_DIRECTION {in} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_26_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_26_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_26_SLEW {fast} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_27_DIRECTION {in} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_27_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_27_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_27_SLEW {fast} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_28_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_28_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_28_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_28_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_29_DIRECTION {in} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_29_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_29_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_29_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_2_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_2_IOTYPE {LVCMOS 3.3V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_2_PULLUP {disabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_2_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_30_DIRECTION {out} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_30_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_30_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_30_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_31_DIRECTION {in} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_31_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_31_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_31_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_32_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_32_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_32_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_32_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_33_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_33_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_33_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_33_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_34_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_34_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_34_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_34_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_35_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_35_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_35_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_35_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_36_DIRECTION {in} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_36_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_36_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_36_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_37_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_37_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_37_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_37_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_38_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_38_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_38_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_38_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_39_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_39_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_39_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_39_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_3_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_3_IOTYPE {LVCMOS 3.3V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_3_PULLUP {disabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_3_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_40_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_40_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_40_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_40_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_41_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_41_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_41_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_41_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_42_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_42_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_42_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_42_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_43_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_43_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_43_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_43_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_44_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_44_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_44_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_44_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_45_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_45_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_45_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_45_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_46_DIRECTION {in} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_46_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_46_PULLUP {disabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_46_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_47_DIRECTION {in} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_47_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_47_PULLUP {disabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_47_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_48_DIRECTION {out} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_48_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_48_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_48_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_49_DIRECTION {in} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_49_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_49_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_49_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_4_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_4_IOTYPE {LVCMOS 3.3V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_4_PULLUP {disabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_4_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_50_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_50_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_50_PULLUP {disabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_50_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_51_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_51_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_51_PULLUP {disabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_51_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_52_DIRECTION {out} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_52_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_52_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_52_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_53_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_53_IOTYPE {LVCMOS 1.8V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_53_PULLUP {enabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_53_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_5_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_5_IOTYPE {LVCMOS 3.3V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_5_PULLUP {disabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_5_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_6_DIRECTION {out} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_6_IOTYPE {LVCMOS 3.3V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_6_PULLUP {disabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_6_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_7_DIRECTION {out} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_7_IOTYPE {LVCMOS 3.3V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_7_PULLUP {disabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_7_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_8_DIRECTION {out} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_8_IOTYPE {LVCMOS 3.3V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_8_PULLUP {disabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_8_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_9_DIRECTION {inout} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_9_IOTYPE {LVCMOS 3.3V} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_9_PULLUP {disabled} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_9_SLEW {slow} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_PRIMITIVE {54} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_TREE_PERIPHERALS {GPIO#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#USB Reset#Quad SPI Flash#GPIO#GPIO#GPIO#I2C 1#I2C 1#CAN 0#CAN 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#UART 1#UART 1#GPIO#GPIO#Enet 0#Enet 0} 
+# ad_ip_parameter sys_ps7 CONFIG.PCW_MIO_TREE_SIGNALS {gpio[0]#qspi0_ss_b#qspi0_io[0]#qspi0_io[1]#qspi0_io[2]#qspi0_io[3]/HOLD_B#qspi0_sclk#reset#qspi_fbclk#gpio[9]#gpio[10]#gpio[11]#scl#sda#rx#tx#tx_clk#txd[0]#txd[1]#txd[2]#txd[3]#tx_ctl#rx_clk#rxd[0]#rxd[1]#rxd[2]#rxd[3]#rx_ctl#data[4]#dir#stp#nxt#data[0]#data[1]#data[2]#data[3]#clk#data[5]#data[6]#data[7]#clk#cmd#data[0]#data[1]#data[2]#data[3]#cd#wp#tx#rx#gpio[50]#gpio[51]#mdc#mdio} 
+
 ad_ip_parameter sys_ps7 CONFIG.PCW_M_AXI_GP0_ENABLE_STATIC_REMAP {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_M_AXI_GP0_ID_WIDTH {12} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_M_AXI_GP0_SUPPORT_NARROW_BURST {0} 
@@ -817,14 +817,14 @@ ad_ip_parameter sys_ps7 CONFIG.PCW_USE_EXPANDED_IOP {0}
 ad_ip_parameter sys_ps7 CONFIG.PCW_USE_EXPANDED_PS_SLCR_REGISTERS {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_USE_FABRIC_INTERRUPT {1} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_USE_HIGH_OCM {0} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_USE_M_AXI_GP0 {1} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_USE_M_AXI_GP0 {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_USE_M_AXI_GP1 {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_USE_PROC_EVENT_BUS {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_USE_PS_SLCR_REGISTERS {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_USE_S_AXI_ACP {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_USE_S_AXI_GP0 {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_USE_S_AXI_GP1 {0} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_USE_S_AXI_HP0 {1} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_USE_S_AXI_HP0 {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_USE_S_AXI_HP1 {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_USE_S_AXI_HP2 {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_USE_S_AXI_HP3 {0} 

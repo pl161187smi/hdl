@@ -57,6 +57,11 @@ proc adi_project {project_name {mode 0} {parameter_list {}} } {
   global ADI_USE_OOC_SYNTHESIS
   global ADI_USE_INCR_COMP
 
+  if [regexp "_zturn$" $project_name] {
+    set p_device "xc7z020clg400-1"
+    set p_board "not-applicable"
+    set sys_zynq 1
+  }
   if [regexp "_ac701$" $project_name] {
     set p_device "xc7a200tfbg676-2"
     set p_board [lindex [lsearch -all -inline [get_board_parts] *ac701*] end]
