@@ -190,16 +190,16 @@ ad_ip_parameter sys_ps7 CONFIG.PCW_FCLK2_PERIPHERAL_DIVISOR1 {1}
 ad_ip_parameter sys_ps7 CONFIG.PCW_FCLK3_PERIPHERAL_CLKSRC {IO PLL} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_FCLK3_PERIPHERAL_DIVISOR0 {1} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_FCLK3_PERIPHERAL_DIVISOR1 {1} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_FCLK_CLK0_BUF {TRUE} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_FCLK_CLK0_BUF {TRUE}
 ad_ip_parameter sys_ps7 CONFIG.PCW_FCLK_CLK1_BUF {TRUE} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_FCLK_CLK2_BUF {FALSE} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_FCLK_CLK3_BUF {FALSE} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {50} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100}
+ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {140} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ {50} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA3_PERIPHERAL_FREQMHZ {50} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA_FCLK0_ENABLE {1} 
-ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA_FCLK1_ENABLE {0} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA_FCLK1_ENABLE {1}
 ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA_FCLK2_ENABLE {0} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_FPGA_FCLK3_ENABLE {0} 
 
@@ -219,6 +219,19 @@ ad_ip_parameter sys_ps7 CONFIG.PCW_GP1_EN_MODIFIABLE_TXN {0}
 ad_ip_parameter sys_ps7 CONFIG.PCW_GP1_NUM_READ_THREADS {4} 
 ad_ip_parameter sys_ps7 CONFIG.PCW_GP1_NUM_WRITE_THREADS {4} 
 
+
+ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_BASEADDR {0xE0004000} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_GRP_INT_ENABLE {1} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_GRP_INT_IO {EMIO} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_HIGHADDR {0xE0004FFF} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_I2C0_IO {EMIO} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_PERIPHERAL_ENABLE {1} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_I2C0_RESET_ENABLE {0} 
+
+ad_ip_parameter sys_ps7 CONFIG.PCW_I2C_PERIPHERAL_FREQMHZ {111.111115} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_I2C_RESET_ENABLE {1} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_I2C_RESET_POLARITY {Active Low} 
+ad_ip_parameter sys_ps7 CONFIG.PCW_I2C_RESET_SELECT {Share reset pin} 
 
 # ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_BASEADDR {0xE000A000} 
 # ad_ip_parameter sys_ps7 CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE {1} 

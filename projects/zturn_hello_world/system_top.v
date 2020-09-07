@@ -25,6 +25,16 @@ module system_top (
   inout           fixed_io_ps_porb,
   inout           fixed_io_ps_srstb,
 
+  inout           iic_0_scl_io,
+  inout           iic_0_sda_io,
+
+  output          hdmi_clk,
+  output  [15:0]  hdmi_data,
+  output          hdmi_de,
+  output          hdmi_hs,
+  output          hdmi_vs,
+  output  [0:0]   hdmi_intn,
+
   output  [2:0]   led);
 
   // internal signals
@@ -32,6 +42,19 @@ module system_top (
   wire    [63:0]  gpio_i;
   wire    [63:0]  gpio_o;
   wire    [63:0]  gpio_t;
+
+  wire            hdmi_clk,
+  wire    [15:0]  hdmi_data,
+  wire            hdmi_de,
+  wire            hdmi_hs,
+  wire            hdmi_vs,
+  wire    [0:0]   hdmi_intn,
+
+  wire            vid_clk;
+  wire    [23:0]  vid_data;
+  wire            vid_de;
+  wire            vid_hs;
+  wire            vid_vs;
 
   // instantiations
 
@@ -44,6 +67,12 @@ module system_top (
     .dio_p(led));
 
   assign gpio_i[63:3] = gpio_o[63:3];
+
+  assign    hdmi_data   =   {vid_data[23:19],vid_data[15:10],vid_data[7:3]};
+  assign    hdmi_clk    =   vid_clk;
+  assign    hdmi_de     =   vid_de;
+  assign    hdmi_hs     =   vid_hs;
+  assign    hdmi_vs     =   vid_vs;
 
   system_wrapper i_system_wrapper (
     .ddr_addr (ddr_addr),
@@ -69,7 +98,13 @@ module system_top (
     .fixed_io_ps_srstb (fixed_io_ps_srstb),
     .gpio_i (gpio_i),
     .gpio_o (gpio_o),
-    .gpio_t (gpio_t));
+    .gpio_t (gpio_t),
+    .hdmi_intn(hdmi_intn),
+    .vid_clk(vid_clk),
+    .vid_data(vid_data),
+    .vid_de(vid_de),
+    .vid_hs(vid_hs),
+    .vid_vs(vid_vs));
 
 endmodule
 
